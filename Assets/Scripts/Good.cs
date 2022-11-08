@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class Good : MonoBehaviour
 {
-    private void OnTriggerStay2D(Collider2D collision)
+    public Player1 p;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.tag == "Good")
+        {
+            p.SpawnFood();
+            p.Score++;
+        }
+        else if (collision.tag == "Bad")
+        {
+            p.SpawnFood();
+        }
     }
 }

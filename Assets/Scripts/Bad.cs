@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Bad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Player1 p;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.tag == "Bad")
+        {
+            p.SpawnFood();
+            p.Score++;
+        }
+        else if (collision.tag == "Good")
+        {
+            p.SpawnFood();
+        }
     }
 }
