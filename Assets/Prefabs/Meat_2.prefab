@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4624115681822511277}
   - component: {fileID: 4624115681822511276}
   - component: {fileID: 4624115681822511275}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Meat_2
   m_TagString: Good
   m_Icon: {fileID: 0}
